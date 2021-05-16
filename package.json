@@ -5,6 +5,7 @@
   "private": true,
   "scripts": {
     "lint": "yarn run prettier --list-different",
+    "bsc": "yarn ganache-fork YOUR_NODE_URL",
     "lint-fix": "yarn run prettier --write",
     "prettier": "prettier './**/*.js' './**/*.md'",
     "ganache-fork": "yarn ganache-cli -l 12000000 --fork"
