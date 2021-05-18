@@ -38,9 +38,9 @@ async function modifyUMAContracts() {
         getAbi("AddressWhitelist"),
         "//-- AddressWhiteList --//"
     );
-
+    const aeTokenAddress = "";
 
 
     // CALLING THE WEB3 CONTRACTS
-    const { transactionHash } = await AddressWhiteList.methods.
+    const { transactionHash } = await AddressWhiteList.methods.addToWhitelist(aeTokenAddress)
 }
