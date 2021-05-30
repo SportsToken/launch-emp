@@ -36,7 +36,7 @@ function getAbi(abiName) {
 }
 
 // Wrap everything in an async function to allow the use of async/await.
-async function deployAthlete(synthName, synthSymbol) {
+export default async function deployAthlete(synthName, synthSymbol) {
   const url = "https://data-seed-prebsc-1-s1.binance.org:8545/"; //Defaults to BSC-Testnet
 
   // See HDWalletProvider documentation: https://www.npmjs.com/package/@truffle/hdwallet-provider.
@@ -106,8 +106,3 @@ deployAthlete("TestLebron James", "tLBJ").catch((e) => {
   console.error(e);
   process.exit(1);
 });
-
-// ().catch((e) => {
-//   console.error(e);
-//   process.exit(1); // Exit with a nonzero exit code to signal failure.
-// });
